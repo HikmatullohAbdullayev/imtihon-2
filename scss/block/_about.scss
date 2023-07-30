@@ -1,0 +1,121 @@
+.about {
+    background: #1B262F;
+    padding: 100px 0;
+     
+       background-image: url(../../img/about_bg.png);
+       background-position:left top ;
+       background-repeat: no-repeat;;
+}
+.about__container {
+         display: flex;
+        justify-content: space-between;
+        align-items: center;
+}
+.about__content {
+    max-width: 445px;
+}
+.about__title {
+    color: #FBFCFE;
+font-family: DM Serif Display;
+font-size: 48px;
+font-weight: 400;
+line-height: 56px; /* 116.667% */
+letter-spacing: -0.369px;
+margin-bottom: 24px;
+}
+.about__text {
+    opacity: 0.6;
+    margin-bottom: 32px;
+    color: #FBFCFE;
+font-size: 15px;
+font-weight: 400;
+line-height: 28px; /* 186.667% */
+}
+.about__link {
+    @include links;
+}
+.about__list {
+    max-width: 500px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(130px,  1fr) );
+    gap: 42px;
+    row-gap: 15px;
+}
+.about__item {
+    margin: auto;
+}
+.about__tesla {
+    margin: auto;
+}
+.about__microsoft {
+    margin: auto;
+}
+.about__hp {
+    margin: auto;
+}
+.about__oracel {
+    margin: auto;
+}
+.about__google {
+    margin: auto;
+}
+.about__nvidia {
+    margin: auto;
+}
+
+@media screen and (max-width:1030px) {
+
+    .about {
+         
+           background-image: url(../../img/respons_sbout.png);
+           background-position:center top ;
+           background-repeat: no-repeat;
+           background-size: cover;
+    }
+    .about__container{
+        text-align: center;
+        display: flex;
+        flex-direction: column-reverse;
+
+    }
+    .about__content{
+        margin-top: 24px;
+    }
+    .about__title {
+    margin-top: 24px;
+    }
+}
+
+@media screen and (max-width:1030px) {
+    .about__list {
+        max-width: 500px;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(130px,  1fr 1fr) );
+        gap: 42px;
+        row-gap: 15px;
+    }
+
+}
+@media screen and (max-width:610px) {
+    .about__list {
+        max-width: 100%;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(130px,  1fr 1fr) );
+        gap: 42px;
+        row-gap: 25px;
+    }
+    .about__content{
+        max-width: 327px;
+    }
+.about__title{
+text-align: center;
+font-size: 32px;
+
+}
+.about__text{
+    text-align: center;
+    font-size: 15px;
+
+}
+
+}

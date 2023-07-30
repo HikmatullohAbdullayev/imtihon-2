@@ -1,0 +1,125 @@
+.hero {
+}
+.hero__container {
+     
+    padding-bottom: 151px;
+            display: flex;
+           justify-content: space-between;
+           align-items: center;
+}
+.hero__content {
+    max-width: 546px;
+    display: flex;
+    flex-direction: column;
+}
+.hero__title--hidden {
+}
+.hero__title {
+    color: #36536B;
+font-family: DM Serif Display;
+font-size: 72px;
+font-weight: 400;
+line-height: 72px; /* 100% */
+letter-spacing: -0.554px;
+margin-bottom: 37px;
+
+}
+.hero__form {
+         display: flex;
+        justify-content: space-between;
+        align-items: center;
+    margin-bottom: 20px;
+    max-width:445px ;
+    border-radius: 24px;
+background: #FBFCFE;
+box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+    
+}
+.hero__input {
+    color: #36536B;
+    width: 100%;
+    background-color:transparent;
+    border:transparent;
+    outline: transparent;
+    padding-left: 27px;
+    padding-top: 14px;
+    padding-bottom: 16px;
+    border-radius: 24px;
+
+&:active{
+    background-color:transparent;
+}
+&:hover{
+    background-color:transparent;
+}
+
+}
+
+.hero__input [placeholder]{
+    color: #36536B;
+font-size: 15px;
+font-weight: 700;
+}
+.hero__btn--positsion{
+vertical-align: middle;
+
+}
+.hero__btn {
+    @include btn;
+}
+.hero__text {
+    color: #6C8294;
+    font-size: 15px;
+    font-weight: 400;
+}
+.hero__link {
+    color: #6C8294;
+    font-size: 15px;
+    font-weight: 700;
+    text-decoration-line: underline;
+}
+
+.hero__img1{
+    max-width: 445px;
+}
+
+@media screen and (max-width:992px) {
+     .hero__title{
+        font-size:56px;
+     }
+
+    
+}
+@media screen and (max-width:882px) {
+    .hero__container {
+     display: flex;
+     flex-direction: column-reverse;
+      
+    }
+    .hero__img{
+        margin-right: -50px;
+    }
+}
+@media screen and (max-width:606px) {
+    
+    
+    .hero__img{
+        margin-right: -30px;
+    }
+}
+
+@media screen and (max-width:400px) {
+    
+    .hero__title{
+        color: #36536B;
+text-align: center;
+font-family: DM Serif Display;
+font-size: 24px;
+font-weight: 400;
+line-height: 36px; /* 112.5% */
+letter-spacing: -0.246px;
+    }
+    .hero__img{
+        margin-right: -30px;
+    }
+}

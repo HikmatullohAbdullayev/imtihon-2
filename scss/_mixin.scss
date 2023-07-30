@@ -1,0 +1,57 @@
+@mixin btn {
+    color: #FBFCFE;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: -0.115px;
+    background-color: #BA4270;
+    padding: 16px 24.5px 14px 26.5px;
+    border-radius: 24px;
+    box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+  white-space: pre;
+    
+    &:hover{
+        color: #FBFCFE;
+    background: #DA6D97;
+    }
+    &:disabled{
+        background-color: #BA4270;
+        border: transparent;
+        outline: transparent;
+    }
+    &:active{
+        border: transparent;
+        outline: transparent;
+    }
+    &:focus{
+        border: transparent;
+        
+    }
+    }
+
+    @mixin links{
+        color: #FBFCFE;
+text-align: center;
+font-family: Public Sans;
+font-size: 15px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+letter-spacing: -0.115px;
+padding: 16px 24.5px 14px 26.5px;
+border-radius: 24px;
+border: 1px solid #FBFCFE;
+
+&:hover{
+    border: 1px solid #FBFCFE;
+    background: #FFF;
+    color:#000;
+}
+&:active{
+    border: transparent;
+    outline: transparent;
+}
+&:focus{
+    border: transparent;
+    
+}
+    }

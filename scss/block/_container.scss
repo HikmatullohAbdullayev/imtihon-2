@@ -1,0 +1,33 @@
+.container{
+    max-width: 1150px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.bg_block{
+       background-image: url(../img/header__bg.png);
+       background-position: right top ;
+       background-repeat: no-repeat;
+
+       background-size: 550px;
+    @media screen and (max-width:1040px) {
+        background-size: 550px;
+
+
+    }
+    @media screen and (max-width:960px) {
+        background-size: 450px;
+
+
+    }
+    @media screen and (max-width:900px) {
+        background-image: url(../img/respons_bg.png);
+        background-position: center top ;
+        background-repeat: no-repeat;
+        background-size:contain;
+
+
+    }
+}
